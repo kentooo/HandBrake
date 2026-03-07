@@ -20,6 +20,11 @@ Download available from Microsoft:
 - Added AV1 VCN 2160p 4K preset
   - For AMD 9000 series GPU hardware and newer
   - Output dimensions may be incorrect on AMD 7000 series GPU hardware; this is unfixable in software
+- Added Production DNxHR presets
+  - MOV container
+  - Any resolution video using HQX and SQ encoder presets
+  - 2160p, 1080p, and 540p resolution proxy (LB) presets
+  - 24-bit PCM multi-channel audio with pass through support
 - Added Production ProRes presets
   - MOV container
   - Any resolution video using standard, HQ, and LT encoder presets
@@ -33,7 +38,8 @@ Download available from Microsoft:
 
 #### Video
 
-- Added Prores encoder
+- Added DNxHR encoder
+- Added ProRes encoder
 - Added AMD VCN AV1 10-bit encoder
 - Added MPEG-2 profile and level selection
 - Allowed muxing FFV1 in the MP4 container
@@ -71,7 +77,9 @@ Download available from Microsoft:
 
 ### Linux
 
-- Added preference option to select the UI language
+- Uses GtkFileLauncher to open files in sandboxed apps
+- Added buttons to cycle through previews on summary page
+- Added an option to change the UI display language
 - Improved display of file sizes
 - Fixed the disk space checks
 - Fixed a crash that could happen when a preset category contains the ' character
